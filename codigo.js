@@ -18,7 +18,7 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 //////////////////// Funcion Oferta Aleatoria.
 
 function funcionOferta() {
-    const URLJSON = "./productosCards.json";
+    const URLJSON = "../productosCards.json";
     fetch(URLJSON)
         .then((result) => result.json())
         .then((productosCards) => {
@@ -51,7 +51,7 @@ productosCartas.classList.add("my-auto");
 
 
 function ObtenerProductos() {
-    const URLJSON = "./productosCards.json";
+    const URLJSON = "../productosCards.json";
     fetch(URLJSON)
         .then((result) => result.json())
         .then((productosCards) => {
@@ -313,7 +313,7 @@ function validar(evento) {
 ////////////////////// BOTONES ORDENAR PRECIO
 
 function MenorAMayor() {
-    const URLJSON = "./productosCards.json";
+    const URLJSON = "../productosCards.json";
     fetch(URLJSON)
         .then((result) => result.json())
         .then((productosCards) => {
@@ -355,7 +355,7 @@ function MenorAMayor() {
 ////////////
 
 function MayorAMenor() {
-    const URLJSON = "./productosCards.json";
+    const URLJSON = "../productosCards.json";
     fetch(URLJSON)
         .then((result) => result.json())
         .then((productosCards) => {
@@ -397,7 +397,7 @@ function MayorAMenor() {
 ///////////
 
 function Predeterminado() {
-    const URLJSON = "./productosCards.json";
+    const URLJSON = "../productosCards.json";
     fetch(URLJSON)
         .then((result) => result.json())
         .then((productosCards) => {
