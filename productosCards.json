@@ -1,0 +1,41 @@
+
+{
+    "productos" : [{
+        "id": 1,
+        "foto": "https://acdn.mitiendanube.com/stores/001/954/237/products/20230707_1806431-2bee18f94d44dfd01f16888260604555-320-0.jpg",
+       "nombre" : "Remera Estampada Frente Rock",
+        "precio": 5000
+    },
+    {
+        "id": 2,
+        "foto": "https://acdn.mitiendanube.com/stores/001/954/237/products/20230514_1432471-34d60d41b9d7b2272716841647396986-320-0.jpg",
+        "nombre": "Remera Estampada Frente/Espalda Rock",
+        "precio": 7000
+    },
+    {
+        "id": 3,
+        "foto": "https://acdn.mitiendanube.com/stores/001/954/237/products/buzo-negro-charly-flores1-d61fc9179594b733fd16892615039094-320-0.webp",
+        "nombre": "Buzo Hoodie Estampa Frente Rock",
+        "precio": 10000
+    },
+    {
+        "id": 4,
+        "foto": "https://acdn.mitiendanube.com/stores/001/954/237/products/img-20230623-wa00231-430b8a95a012f6e7f516875531310618-320-0.jpg",
+        "nombre": "Buzo Hoodie Estampa Frente/Espalda Rock",
+        "precio": 12000
+    },
+    {
+        "id": 5,
+        "foto": "https://acdn.mitiendanube.com/stores/001/954/237/products/charly-maquina1-78ae76af756e86704916802171209902-320-0.jpg",
+        "nombre": "Buzo Cuello Redondo Estampa Frente Rock",
+        "precio": 9000
+    },
+    {
+        "id": 6,
+        "foto": "https://acdn.mitiendanube.com/stores/001/954/237/products/gulp1-cab0ee4cbac8c9092216802204065940-320-0.jpg",
+        "nombre": "Buzo Cuello Redondo Estampa Frente/Espalda Rock",
+        "precio": 11000
+    }
+    ]
+    }
+    

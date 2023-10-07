@@ -1,0 +1,153 @@
+/* Body y Titulo de la Pagina*/
+
+#body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+/* Estilo Botones*/
+
+
+.btn-primary {
+    background-color: rgb(184, 40, 40);
+    color: black;
+    font-size: 20px;
+    border: rgb(184, 40, 40);
+
+
+}
+
+.btn-primary:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(77, 15, 15);
+    font-size: 20px;
+    border: rgb(255, 0, 0);
+}
+
+/* Productos*/
+
+#prods {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: rgb(170, 169, 169);
+    border: rgb(170, 169, 169);
+    margin-top: 70px;
+}
+
+.card-body {
+    background-color: rgb(170, 169, 169);
+    border: rgb(170, 169, 169);
+}
+
+/* Carrito*/
+
+#carrito {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    width: 300px;
+
+}
+
+/* Ordenador de Form y Btn */
+#OrdenFormBtn{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Botones Varios */
+
+.BotonesVarios {
+    background-color: rgb(170, 169, 169);
+    width: 700px;
+    height:200px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.BotonesVariosub {
+    margin-left: 30px;
+}
+
+
+/* Formulario Newsletter */
+
+.formYBotones {
+    display: flex;
+
+    justify-content: space-around;
+    align-content: center;
+    width: 800px;
+}
+
+.FormularioSub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 30px;
+    background-color: rgb(170, 169, 169);
+    width: 500px;
+}
+
+.FormularioSubItem {
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.Formulariotitle {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+
+/* Carrito */
+.table {
+    width: 700px;
+    margin-left: 50px;
+}
+
+.SeccionCarrito {
+    background-color: rgb(170, 169, 169);
+    width: 800px;
+    margin: 50px;
+}
+
+.textoCarrito {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.botonesCarrito {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Light/Dark */
+.light {
+    background-color: rgb(207, 207, 207);
+}
+
+.dark {
+    background-color: rgb(87, 86, 86);
+}
