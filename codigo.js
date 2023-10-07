@@ -18,7 +18,7 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 //////////////////// Funcion Oferta Aleatoria.
 
 function funcionOferta() {
-    const URLJSON = "../productosCards.json";
+    const URLJSON = "./productosCards.json";
     fetch(URLJSON)
         .then((result) => result.json())
         .then((productosCards) => {
@@ -35,7 +35,7 @@ function funcionOferta() {
                 imageAlt: 'Oferta',
             })
         })
-        .catch((e) => console.log())
+        .catch((e) => console.log(e))
 
 
 }
@@ -51,7 +51,7 @@ productosCartas.classList.add("my-auto");
 
 
 function ObtenerProductos() {
-    const URLJSON = "../productosCards.json";
+    const URLJSON = "./productosCards.json";
     fetch(URLJSON)
         .then((result) => result.json())
         .then((productosCards) => {
@@ -79,7 +79,7 @@ function ObtenerProductos() {
                 }
             }
         })
-        .catch((e) => console.log())
+        .catch((e) => console.log(e))
 
 }
 ObtenerProductos();
@@ -313,7 +313,7 @@ function validar(evento) {
 ////////////////////// BOTONES ORDENAR PRECIO
 
 function MenorAMayor() {
-    const URLJSON = "../productosCards.json";
+    const URLJSON = "./productosCards.json";
     fetch(URLJSON)
         .then((result) => result.json())
         .then((productosCards) => {
@@ -349,13 +349,13 @@ function MenorAMayor() {
 
             }
         })
-        .catch((e) => console.log())
+        .catch((e) => console.log(e))
 }
 
 ////////////
 
 function MayorAMenor() {
-    const URLJSON = "../productosCards.json";
+    const URLJSON = "./productosCards.json";
     fetch(URLJSON)
         .then((result) => result.json())
         .then((productosCards) => {
@@ -390,14 +390,14 @@ function MayorAMenor() {
                 }
             }
         })
-        .catch((e) => console.log())
+        .catch((e) => console.log(e))
 }
 
 
 ///////////
 
 function Predeterminado() {
-    const URLJSON = "../productosCards.json";
+    const URLJSON = "./productosCards.json";
     fetch(URLJSON)
         .then((result) => result.json())
         .then((productosCards) => {
@@ -423,7 +423,7 @@ function Predeterminado() {
                 }
             }
         })
-        .catch((e) => console.log())
+        .catch((e) => console.log(e))
 }
 
 
