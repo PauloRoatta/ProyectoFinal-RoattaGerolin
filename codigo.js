@@ -18,11 +18,11 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 //////////////////// Funcion Oferta Aleatoria.
 
 function funcionOferta() {
-    const URLJSON = "./productosCards.json";
-    fetch(URLJSON)
+    const URLJSON5 = "./productosCards.json";
+    fetch(URLJSON5)
         .then((result) => result.json())
         .then((productosCards) => {
-            const productos = productosCards.productos;
+            const productos = productosCards;
             let numeroAzar = Math.round(Math.random() * (productos.length - 1) + 1);
             let productoOferta = productos[numeroAzar];
             Swal.fire({
@@ -51,11 +51,11 @@ productosCartas.classList.add("my-auto");
 
 
 function ObtenerProductos() {
-    const URLJSON = "./productosCards.json";
-    fetch(URLJSON)
+    const URLJSON4 = "./productosCards.json";
+    fetch(URLJSON4)
         .then((result) => result.json())
         .then((productosCards) => {
-            const productos = productosCards.productos;
+            const productos = productosCards;
             for (const producto of productos) {
                 productosCartas.innerHTML += `
          <div class="card" style="width: 18rem;">
@@ -313,11 +313,11 @@ function validar(evento) {
 ////////////////////// BOTONES ORDENAR PRECIO
 
 function MenorAMayor() {
-    const URLJSON = "./productosCards.json";
-    fetch(URLJSON)
+    const URLJSON3 = "./productosCards.json";
+    fetch(URLJSON3)
         .then((result) => result.json())
         .then((productosCards) => {
-            const produs = productosCards.productos;
+            const produs = productosCards;
             produs.sort((a, b) => {
                 if (a.precio == b.precio) {
                     return 0;
@@ -355,11 +355,11 @@ function MenorAMayor() {
 ////////////
 
 function MayorAMenor() {
-    const URLJSON = "./productosCards.json";
-    fetch(URLJSON)
+    const URLJSON2 = "./productosCards.json";
+    fetch(URLJSON2)
         .then((result) => result.json())
         .then((productosCards) => {
-            const produs = productosCards.productos;
+            const produs = productosCards;
             produs.sort((a, b) => {
                 if (a.precio == b.precio) {
                     return 0;
@@ -397,11 +397,11 @@ function MayorAMenor() {
 ///////////
 
 function Predeterminado() {
-    const URLJSON = "./productosCards.json";
-    fetch(URLJSON)
+    const URLJSON1 = "./productosCards.json";
+    fetch(URLJSON1)
         .then((result) => result.json())
         .then((productosCards) => {
-            const productos = productosCards.productos;
+            const productos = productosCards;
             productosCartas.innerHTML = "";
             for (const producto of productos) {
                 productosCartas.innerHTML += `
