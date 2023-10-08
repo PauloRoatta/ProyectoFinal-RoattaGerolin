@@ -22,7 +22,7 @@ function funcionOferta() {
     fetch(URLJSON5)
         .then((result) => result.json())
         .then((productosCards) => {
-            const productos = productosCards;
+            const productos = productosCards.productos;
             let numeroAzar = Math.round(Math.random() * (productos.length - 1) + 1);
             let productoOferta = productos[numeroAzar];
             Swal.fire({
@@ -55,7 +55,7 @@ function ObtenerProductos() {
     fetch(URLJSON4)
         .then((result) => result.json())
         .then((productosCards) => {
-            const productos = productosCards;
+            const productos = productosCards.productos;
             for (const producto of productos) {
                 productosCartas.innerHTML += `
          <div class="card" style="width: 18rem;">
@@ -317,7 +317,7 @@ function MenorAMayor() {
     fetch(URLJSON3)
         .then((result) => result.json())
         .then((productosCards) => {
-            const produs = productosCards;
+            const produs = productosCards.productos;
             produs.sort((a, b) => {
                 if (a.precio == b.precio) {
                     return 0;
@@ -359,7 +359,7 @@ function MayorAMenor() {
     fetch(URLJSON2)
         .then((result) => result.json())
         .then((productosCards) => {
-            const produs = productosCards;
+            const produs = productosCards.productos;
             produs.sort((a, b) => {
                 if (a.precio == b.precio) {
                     return 0;
@@ -401,7 +401,7 @@ function Predeterminado() {
     fetch(URLJSON1)
         .then((result) => result.json())
         .then((productosCards) => {
-            const productos = productosCards;
+            const productos = productosCards.productos;
             productosCartas.innerHTML = "";
             for (const producto of productos) {
                 productosCartas.innerHTML += `
